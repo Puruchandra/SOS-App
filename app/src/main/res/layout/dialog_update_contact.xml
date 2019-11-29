@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/dialogContactNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="Enter Name"
+            android:inputType="textCapWords"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/dialogContactNoEdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/dialogContactNameEdt"
+            android:background="@null"
+            android:hint="Enter Phone No"
+            android:inputType="number"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextPassword"
+            android:layout_below="@id/dialogContactNameEdt"
+            android:layout_centerInParent="true"
+            android:background="#A8AAAC"
+            android:textSize="1dp" />
+
+        <Button
+            android:id="@+id/dialogContactSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:background="#2A21DA"
+            android:elevation="8dp"
+            android:text="Save"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/dialogCancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/dialogContactSaveBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:background="#fff"
+            android:elevation="8dp"
+            android:text="Cancel"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

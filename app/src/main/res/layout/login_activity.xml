@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.chan.pr2prakat.activity.LoginActivity">
+
+
+
+    <Button
+
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_anchor="@+id/relativeLogin"
+        app:layout_anchorGravity="bottom|center"
+        android:background="@drawable/loginbtn"
+        android:backgroundTint="#f7242e37"
+        android:textSize="24dp"
+        android:textColor="#f7242e37"/>
+    <Button
+
+        android:id="@+id/loginBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_anchor="@id/relativeLogin"
+        app:layout_anchorGravity="bottom|center"
+        android:background="@drawable/login_btn_selector"
+        android:text="Go"
+        android:textSize="16dp"
+        android:textColor="#242e37"/>
+
+    <include layout="@layout/content_login" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/doodle"
+    tools:context="com.example.chan.pr2prakat.activity.LoginActivity"
+    tools:showIn="@layout/login_activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7242e37"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/relativeLogin"
+            android:layout_margin="20dp" />
+
+        <RelativeLayout
+            android:id="@id/relativeLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/relativebg"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/editLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:maxLines="1"
+                android:background="@drawable/edittext_login"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="#fff"
+                android:hint="Enter Email"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#888383" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editPassword"
+                android:background="#242e37"
+                android:textSize="1dp" />
+
+
+            <EditText
+                android:id="@id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editLogin"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:maxLines="1"
+                android:background="@drawable/edittext_login"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawableTint="#fff"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#888383" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLogin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="#fff"
+            android:textColor="#fff"
+            android:textSize="1dp" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:text="click to register"
+            android:background="#2AFFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+    </RelativeLayout>
+
+
+</RelativeLayout>
